@@ -1,0 +1,29 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 800px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.content {
+  width: 800px;
+  height: 500px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input button {
+  width: 800px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.input button {
+  cursor: pointer;
+}
