@@ -25,7 +25,7 @@ span.thumb {
   height: 150px;
   position: relative;
 }
-span.thumb em {
+span.thumb div {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,8 +36,9 @@ span.thumb em {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: all 0.3s;
+  font-size: 30px;
 }
-span.thumb em:hover {
+span.thumb div:hover {
   opacity: 1;
 }
 

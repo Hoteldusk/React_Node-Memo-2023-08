@@ -1,14 +1,15 @@
 import "../css/memo_spring_copy.css";
 
-function List() {
+function List(props) {
   return (
     <li>
-      <a href="/detail">
+      <a href={`/detail/${props.listId}`}>
         <span className="thumb">
-          내용미리보기
-          <em>View</em>
+          <p>{props.date}</p>
+          <p>{props.time}</p>
+          <em>{props.subtitle}</em>
         </span>
-        <strong>제목입니다</strong>
+        <strong>{props.title}</strong>
       </a>
     </li>
   );

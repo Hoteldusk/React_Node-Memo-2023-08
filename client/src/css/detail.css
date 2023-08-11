@@ -1,0 +1,77 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.note-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.note-title {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.note-subtitle {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.note-metadata {
+  margin-bottom: 5px;
+  margin-left: 800px;
+}
+
+.note-content {
+  margin-top: 5px;
+  /* border-bottom: 2px solid rgb(115, 207, 219); */
+  white-space: pre-wrap;
+  font-size: 20px;
+  /* text-decoration: underline rgb(155, 207, 219);
+  text-underline-position: under; */
+}
+.buttonDiv {
+  display: flex;
+}
+
+.updatebutton,
+.deletebutton {
+  padding: 15px 40px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.updatebutton {
+  margin-left: auto;
+  /* border-color: rgb(143, 245, 136); */
+  border: 3px solid rgb(143, 245, 136);
+  background-color: #eee;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.deletebutton {
+  /* background-color: rgb(255, 61, 61); */
+  border: 3px solid rgb(255, 61, 61);
+  background-color: #eee;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.updatebutton:hover {
+  background-color: #d7fbd7;
+}
+.deletebutton:hover {
+  background-color: #fabbbb;
+}

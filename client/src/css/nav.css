@@ -10,4 +10,5 @@ div.title {
   align-items: center;
   font-size: 40px;
   margin: 30px auto;
+  cursor: pointer;
 }

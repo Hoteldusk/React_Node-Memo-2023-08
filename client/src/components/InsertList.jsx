@@ -1,14 +1,14 @@
-import "../css/memo_spring_copy.css";
+import "../css/insertList.css";
 
 function InsertList() {
   return (
     <li>
       <a href="/insert">
         <span className="thumb">
-          내용미리보기
-          <em>┼</em>
+          메모 추가
+          <div>+</div>
         </span>
-        <strong>추가</strong>
+        <strong>메모 추가</strong>
       </a>
     </li>
   );
