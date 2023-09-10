@@ -13,7 +13,7 @@ function Update() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    Axios.get(`http://192.168.4.47:3001/findById/${id}`)
+    Axios.get(`http://localhost:3001/findById/${id}`)
       .then((response) => {
         // 서버로부터 받은 데이터를 상태에 저장
         setData(response.data);
@@ -22,7 +22,7 @@ function Update() {
       .catch((error) => {
         console.error("데이터 불러오기 실패", error);
       });
-  }, []); // 컴포넌트가 마운트될 때 한 번만 실행
+  }, [id]); // 컴포넌트가 마운트될 때 한 번만 실행
 
   let contentWithLineBreaks = "";
   if (data.me_content) {
@@ -41,7 +41,9 @@ function Update() {
     const formattedDate = `${year}-${month}-${day}`;
     const formattedTime = `${hours}:${minutes}:${seconds}`;
 
-    await Axios.post(`http://192.168.4.47:3001/update/${id}`, {
+    console.log("test")
+
+    await Axios.post(`http://localhost:3001/update/${id}`, {
       title: title,
       subtitle: subtitle,
       content: content.replace(/\n/g, "<br>"),

@@ -26,7 +26,7 @@ function Insert() {
     const formattedDate = `${year}-${month}-${day}`;
     const formattedTime = `${hours}:${minutes}:${seconds}`;
 
-    await Axios.post("http://192.168.4.47:3001/create", {
+    await Axios.post("http://localhost:3001/create", {
       title: title,
       subtitle: subtitle,
       content: content.replace(/\n/g, "<br>"),

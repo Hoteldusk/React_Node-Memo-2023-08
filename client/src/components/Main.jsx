@@ -10,7 +10,7 @@ function Main() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://192.168.4.47:3001/selectAll")
+    Axios.get("http://localhost:3001/selectAll")
       .then((response) => {
         // 서버로부터 받은 데이터를 상태에 저장
         setData(response.data);
